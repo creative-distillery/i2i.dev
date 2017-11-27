@@ -1,0 +1,60 @@
+
+
+@media screen and (max-width: 768px) {
+
+  //BELOW bootstrap md size
+
+  html {
+    font-size: 12px;
+  }
+
+  .header {
+
+    img {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .social-links {
+      display: none;
+    }
+
+    &::after {
+      transform: matrix(1, -0.0874887, 0, 1, 0, -30);
+    }
+  }
+
+  .bottom {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+  // ABOVE bootstrap md size
+
+  .header {
+
+    &::after {
+      transform: matrix(1, -0.0874887, 0, 1, 0, -50);
+    }
+
+  }
+
+  .footer {
+    .social-links {
+      display: none;
+    }
+  }
+
+}

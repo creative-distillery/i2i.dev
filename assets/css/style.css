@@ -56,25 +56,26 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  width: 100%;
   position: relative; }
   .header::after {
     content: '';
     width: 100%;
     height: 170px;
     position: absolute;
-    transform: matrix(1, -0.0874887, 0, 1, 0, -50);
     background-color: #fff; }
   .header img {
     width: 356px;
     height: auto;
     max-width: 100%;
+    flex: 0 auto;
     z-index: 99;
-    padding: 1.25rem 3.125rem; }
+    padding: 1.25rem 3.125rem;
+    padding-right: 0; }
 
 .section {
   padding-top: 1.1875rem;
-  padding-bottom: 2.375rem;
-  width: 100%; }
+  padding-bottom: 2.375rem; }
 
 .block, .block-heading {
   display: block;
@@ -114,6 +115,11 @@ p {
     max-width: 50%; } }
 .footer {
   padding-bottom: 1.25rem; }
+  .footer .social-links {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: auto;
+    margin-left: auto; }
 
 .social-links {
   display: flex;
@@ -121,6 +127,7 @@ p {
   width: 100px;
   z-index: 99;
   padding: 1.25rem 3.125rem;
+  padding-left: 0;
   box-sizing: content-box; }
 
 .btn, .btn-outline, .btn-submit, .email {
@@ -133,11 +140,16 @@ p {
   padding: 1rem 2rem;
   color: #fff;
   margin-top: .5rem;
-  margin-bottom: .5rem; }
+  margin-bottom: .5rem;
+  transition: .1s ease-in-out; }
 
 .btn-outline {
   border: 1px solid #fff;
   background-color: rgba(0, 0, 0, 0); }
+  .btn-outline:hover {
+    background-color: #F15D22;
+    text-decoration: none;
+    color: #fff; }
 
 .btn-submit {
   border: 0px;
@@ -163,8 +175,40 @@ p {
 .mt-2 {
   margin-top: 2rem !important; }
 
+.my-05 {
+  margin-top: .5rem;
+  margin-bottom: .5rem; }
+
 .h3, .h4 {
   padding-top: 1.1875rem;
   padding-bottom: 1.1875rem; }
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px; }
+
+  .header img {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .header .social-links {
+    display: none; }
+  .header::after {
+    transform: matrix(1, -0.0874887, 0, 1, 0, -30); }
+
+  .bottom {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .col {
+    padding-left: 0;
+    padding-right: 0; } }
+@media screen and (min-width: 768px) {
+  .header::after {
+    transform: matrix(1, -0.0874887, 0, 1, 0, -50); }
+
+  .footer .social-links {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
