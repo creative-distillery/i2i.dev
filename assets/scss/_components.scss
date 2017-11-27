@@ -1,4 +1,11 @@
-
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  z-index: 99;
+  padding: $padding-header;
+  box-sizing: content-box;
+}
 
 .btn {
   @include fontstack-semibold;
