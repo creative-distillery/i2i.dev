@@ -51,7 +51,8 @@ p {
 
 .section {
   padding-top: 1.1875rem;
-  padding-bottom: 2.375rem; }
+  padding-bottom: 2.375rem;
+  width: 100%; }
 
 .block, .block-heading {
   display: block;
@@ -81,6 +82,16 @@ p {
   padding-top: 1.1875rem;
   padding-bottom: 1.1875rem; }
 
+.top {
+  background-color: #00BCE7; }
+
+.middle {
+  background-color: #F15D22;
+  background-image: url("../dandelion.jpg"), linear-gradient(#f15d22, #f15d22);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .bottom {
   display: flex;
   flex-wrap: wrap;
@@ -89,14 +100,14 @@ p {
   padding-top: 2.75rem; }
 
 .col {
-  width: 100%;
+  flex: 0 0 100%;
   max-width: 100%;
   padding-left: 1.28rem;
   padding-right: 1.28rem; }
 
 @media screen and (min-width: 768px) {
   .col {
-    width: 50%;
+    flex: 0 0 50%;
     max-width: 50%; } }
 .footer {
   padding-bottom: 1.25rem; }

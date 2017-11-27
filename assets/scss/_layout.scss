@@ -1,6 +1,7 @@
 .section {
   padding-top: 1.1875rem;
   padding-bottom: 2.375rem;
+  width: 100%;
 }
 
 .block {
@@ -38,6 +39,18 @@
   padding-bottom: 1.1875rem;
 }
 
+.top {
+  background-color: $color-primary;
+}
+
+.middle {
+  background-color: $color-secondary;
+  background-image: url("../dandelion.jpg"), linear-gradient($overlay-secondary, $overlay-secondary);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .bottom {
   display: flex;
   flex-wrap: wrap;
@@ -47,7 +60,7 @@
 }
 
 .col {
-  width: 100%;
+  flex: 0 0 100%;
   max-width: 100%;
   padding-left: 1.28rem;
   padding-right: 1.28rem;
@@ -55,7 +68,7 @@
 
 @media screen and (min-width: 768px) {
   .col {
-    width: 50%;
+    flex: 0 0 50%;
     max-width: 50%;
   }
 }
