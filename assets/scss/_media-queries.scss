@@ -58,3 +58,25 @@
   }
 
 }
+
+@media screen and (min-width: 1440px) {
+
+  .header {
+
+    &::after {
+      height: 200px;
+      transform: matrix(1, -0.0874887, 0, 1, 0, -60);
+    }
+
+  }
+}
+
+@media screen and (min-width: 1660px) {
+
+  .header {
+
+    &::after {
+      transform: matrix(1, -0.0874887, 0, 1, 0, -80);
+    }
+  }
+}
