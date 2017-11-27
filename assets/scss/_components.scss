@@ -1,0 +1,31 @@
+
+
+.btn {
+  @include fontstack-semibold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  color: #fff;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.btn-outline {
+  @extend .btn;
+  border: 1px solid #fff;
+  background-color: $transparent;
+}
+
+.btn-submit {
+  @extend .btn;
+  border: 0px;
+  background-color: $color-link;
+}
+
+.email {
+  @extend .btn;
+  border: 1px solid #fff;
+  background-color: $transparent;
+  color: #fff;
+}

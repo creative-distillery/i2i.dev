@@ -1,0 +1,90 @@
+@mixin fontstack-thin {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  @content;
+}
+
+@mixin fontstack-light {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  @content;
+}
+
+@mixin fontstack-normal {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  @content;
+}
+
+@mixin fontstack-medium {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  @content;
+}
+
+@mixin fontstack-semibold {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  @content;
+}
+
+
+html {
+  font-size: 16px;
+  color: #fff;
+  font-family: 'proxima-nova', sans-serif;
+}
+
+i {
+  color: $color-link;
+  &.fa {
+    font-size: 20px;
+  }
+}
+
+h3 {
+  @include fontstack-thin {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    color: #fff;
+  }
+}
+
+h4 {
+  @include fontstack-medium {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #fff;
+  }
+}
+
+h5 {
+  @include fontstack-semibold {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: $color-grey;
+    margin:0;
+  }
+}
+
+p {
+  @include fontstack-light {
+    font-size: 1.125rem;
+    line-height: 1.7778rem;
+  }
+  .footer & {
+    color: $color-grey;
+    margin: 0;
+  }
+}
+
+.bottom {
+  h3, p {
+    color: $color-tertiary;
+  }
+}
