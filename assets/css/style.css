@@ -53,10 +53,16 @@ p {
 /*============  Mixins  ============*/
 /*==================================*/
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: fixed;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%; }
   .header::after {
     content: '';
@@ -68,7 +74,9 @@ p {
     width: 356px;
     height: auto;
     max-width: 100%;
-    flex: 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 auto;
+            flex: 0 auto;
     z-index: 99;
     padding: 1.25rem 3.125rem;
     padding-right: 0; }
@@ -91,28 +99,37 @@ p {
 
 .middle {
   background-color: #F15D22;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f15d22), to(#f15d22)), url("../dandelion.jpg");
   background-image: linear-gradient(#f15d22, #f15d22), url("../dandelion.jpg");
-  filter: grayscale(15%);
+  -webkit-filter: grayscale(15%);
+          filter: grayscale(15%);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-left: 3.125rem;
   padding-right: 3.125rem;
   padding-top: 2.75rem; }
 
 .col {
-  flex: 0 0 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   max-width: 100%;
   padding-left: 1.28rem;
   padding-right: 1.28rem; }
 
 @media screen and (min-width: 768px) {
   .col {
-    flex: 0 0 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
     max-width: 50%; } }
 .footer {
   padding-bottom: 1.25rem; }
@@ -123,13 +140,18 @@ p {
     margin-left: auto; }
 
 .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100px;
   z-index: 99;
   padding: 1.25rem 3.125rem;
   padding-left: 0;
-  box-sizing: content-box; }
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
 
 .btn, .btn-outline, .btn-submit, .email {
   font-family: "proxima-nova",sans-serif;
@@ -142,6 +164,7 @@ p {
   color: #fff;
   margin-top: .5rem;
   margin-bottom: .5rem;
+  -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out; }
 
 .btn-outline {
@@ -199,7 +222,8 @@ p {
   .header .social-links {
     display: none; }
   .header::after {
-    transform: matrix(1, -0.0874887, 0, 1, 0, -30); }
+    -webkit-transform: matrix(1, -0.0874887, 0, 1, 0, -30);
+            transform: matrix(1, -0.0874887, 0, 1, 0, -30); }
 
   .bottom {
     padding-left: 1rem;
@@ -213,22 +237,31 @@ p {
     margin-top: 12rem !important; } }
 @media screen and (min-width: 768px) {
   .header::after {
-    transform: matrix(1, -0.0874887, 0, 1, 0, -50); }
+    -webkit-transform: matrix(1, -0.0874887, 0, 1, 0, -50);
+            transform: matrix(1, -0.0874887, 0, 1, 0, -50); }
 
   .footer .social-links {
     display: none; } }
 @media screen and (min-width: 1440px) {
   .header::after {
     height: 200px;
-    transform: matrix(1, -0.0874887, 0, 1, 0, -60); } }
+    -webkit-transform: matrix(1, -0.0874887, 0, 1, 0, -60);
+            transform: matrix(1, -0.0874887, 0, 1, 0, -60); } }
 @media screen and (min-width: 1660px) {
   .header::after {
-    transform: matrix(1, -0.0874887, 0, 1, 0, -80); } }
+    -webkit-transform: matrix(1, -0.0874887, 0, 1, 0, -80);
+            transform: matrix(1, -0.0874887, 0, 1, 0, -80); } }
 #ctct_form_0 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: inherit;
-  justify-content: center;
-  align-items: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .ctct-form-embed.form_0 .ctct-form-defaults {
   background-color: transparent !important; }
@@ -302,5 +335,3 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem; }
-
-/*# sourceMappingURL=style.css.map */
