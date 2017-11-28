@@ -8,3 +8,108 @@
 @import 'components';
 @import 'utilities';
 @import 'media-queries';
+
+
+// Form
+#ctct_form_0 {
+  display: flex;
+  min-height: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctct-form-embed.form_0 .ctct-form-defaults {
+  background-color: transparent !important;
+}
+
+#email_address_field_0 {
+  margin: 0.625rem;
+}
+
+#email_address_label_0 {
+  display: none;
+}
+
+#email_address_0 {
+  display: block;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  color: #fff;
+
+  @include fontstack-normal {
+    font-size: 1.125rem;
+  }
+
+  &::-moz-placeholder,
+  &::-webkit-input-placeholder,
+  &:-ms-input-placeholder,
+  &:-moz-placeholder,
+  &::placeholder {
+    color: #fff;
+  }
+}
+
+// Submit Button
+#ctct_form_0 > button {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 1rem 2rem;
+  margin: 0.625rem;
+
+  @include fontstack-medium {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+  }
+}
+
+#email_address_field_0 {
+  display: block;
+}
+
+
+// Confirmation
+
+#success_message_0 {
+  text-align: center;
+  color: #fff !important;
+}
+.ctct-form-embed.form_0 .ctct-form-defaults .ctct-form-header {
+  color: #fff !important;
+
+}
+.ctct-form-embed.form_0 .ctct-form-defaults .ctct-form-text,
+.ctct-form-embed.form_0 .ctct-form-custom .ctct-form-label,
+.ctct-form-embed.form_0 .ctct-form-custom .ctct-form-listname,
+.ctct-form-embed.form_0 .ctct-form-custom .ctct-form-lists-legend,
+.ctct-form-embed.form_0 .ctct-form-defaults .ctct-form-footer,
+.ctct-form-embed.form_0 .ctct-form-defaults .ctct-form-footer .ctct-form-footer-link {
+  color: #fff !important;
+
+}
+
+#email_address_0.is-error {
+    border-color: #fff !important;
+    color: #fff !important;
+}
+
+#email_address_field_0 > div {
+  background-color: #fff;
+  padding: .25rem;
+  border-radius: 2px;
+}
+
+
+
+#success_message_0 > h2 {
+  @include fontstack-light {
+    font-size: 2rem;
+  }
+}
+
+#success_message_0 > p {
+  @include fontstack-normal {
+    font-size: 1.125rem;
+  }
+}
