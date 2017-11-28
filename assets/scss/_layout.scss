@@ -48,6 +48,8 @@
   max-width: 100%;
   margin: 0 auto;
   width: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .block-heading {
@@ -58,6 +60,14 @@
 
 .top {
   background-color: $color-primary;
+  background-image: url("../words.png");
+  background-repeat: repeat;
+}
+
+.verbiage {
+  column-count: 2;
+  column-width: 200px;
+  width: 700px;
 }
 
 .middle {
