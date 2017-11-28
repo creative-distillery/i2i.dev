@@ -4,11 +4,11 @@
 
 // Slanted effect
 @mixin skewed {
-  // position: relative;
+  position: relative;
   &::after {
     content: '';
     width: 100%;
-    height: 170px;
+    height: 250px;
     position: absolute;
     // transform: translateY(-50px);
     @content;
@@ -18,7 +18,7 @@
 
 .header {
   display: flex;
-  position: fixed;
+  // position: fixed;
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
@@ -26,15 +26,31 @@
   @include skewed {
     background-color: #fff;
   }
+
   img {
     width: 356px;
     height: auto;
     max-width: 100%;
     flex: 0 auto;
     z-index: 99;
-    padding: $padding-header;
-    padding-right: 0;
+    // padding: $padding-header;
+    // padding-top: 1.25rem;
+    // padding-right: 0;
+    // padding-left: 0;
   }
+}
+
+.header-center {
+  width: 66.7%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1.25rem;
+}
+.header-right {
+  width: 33.3%;
+  display: flex;
+  justify-content: flex-end;
+
 }
 
 .section {
@@ -65,16 +81,14 @@
 }
 
 .verbiage {
-  column-count: 2;
-  column-width: 200px;
   width: 800px;
 }
 
 .middle {
   background-color: $color-secondary;
-  background-image: linear-gradient($overlay-secondary, $overlay-secondary),  url("../dandelion.jpg");
-  filter: grayscale(15%);
-  background-blend-mode: overlay;
+  background-image: url("../orange-dandelion.jpg");
+  // filter: grayscale(25%);
+  // background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
 }
