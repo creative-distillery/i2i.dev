@@ -91,7 +91,8 @@ p {
 
 .middle {
   background-color: #F15D22;
-  background-image: url("../dandelion.jpg"), linear-gradient(#f15d22, #f15d22);
+  background-image: linear-gradient(#f15d22, #f15d22), url("../dandelion.jpg");
+  filter: grayscale(15%);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover; }

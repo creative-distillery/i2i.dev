@@ -62,7 +62,8 @@
 
 .middle {
   background-color: $color-secondary;
-  background-image: url("../dandelion.jpg"), linear-gradient($overlay-secondary, $overlay-secondary);
+  background-image: linear-gradient($overlay-secondary, $overlay-secondary),  url("../dandelion.jpg");
+  filter: grayscale(15%);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
