@@ -15,6 +15,22 @@
   }
 }
 
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
 
 .header {
   display: flex;
@@ -22,13 +38,14 @@
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
+  height: auto;
 
   @include skewed {
     background-color: #fff;
   }
 
   img {
-    width: 356px;
+    width: 100%;
     height: auto;
     max-width: 100%;
     flex: 0 auto;
@@ -40,15 +57,21 @@
   }
 }
 
+.header-left {
+  flex: 1 2 25%;
+}
 .header-center {
-  width: 66.7%;
+  flex: 2 1 50%;
   display: flex;
-  justify-content: flex-end;
-  padding-top: 1.25rem;
+  justify-content: center;
+  // height: auto;
+  // padding-top: 1.25rem;
+
+  @include aspect-ratio(89, 30);
 }
 .header-right {
-  width: 33.3%;
   display: flex;
+  flex: 1 2 25%;
   justify-content: flex-end;
 
 }

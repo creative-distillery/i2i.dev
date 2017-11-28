@@ -76,7 +76,7 @@ p {
   @include fontstack-light {
     font-size: 1.125rem;
     line-height: 1.7778rem;
-    color: $color-link;
+    color: #000;
   }
   .footer & {
     color: $color-grey;
@@ -85,7 +85,7 @@ p {
 }
 
 .bottom {
-  h3, p {
+  h3 {
     color: $color-tertiary;
   }
 }
