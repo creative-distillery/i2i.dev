@@ -19,7 +19,7 @@ $(document).ready(addPlaceholder);
 function tryItNow() {
 
   if ( $('#middleSection').visible() ) {
-    $('#joingList').delay(500).slideToggle( 400 , function() {
+    $('#joingList').delay(300).slideToggle( 400 , function() {
       console.log('message up');
 
       $('#cdContactForm').delay(500).slideToggle( 400 );
