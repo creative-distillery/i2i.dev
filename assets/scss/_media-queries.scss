@@ -60,6 +60,8 @@
 
     &::after {
       transform: matrix(1, -0.0874887, 0, 1, 0, -50);
+      // height: 250px;
+
     }
 
   }
@@ -71,24 +73,48 @@
   }
 
 }
-
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1034px) {
 
   .header {
 
     &::after {
-      height: 200px;
+      // height: 250px;
       transform: matrix(1, -0.0874887, 0, 1, 0, -60);
     }
 
   }
 }
 
+// @media screen and (min-width: 1440px) {
+//
+//   .header {
+//
+//     &::after {
+//       height: 300px;
+//       transform: matrix(1, -0.0874887, 0, 1, 0, -60);
+//     }
+//
+//   }
+// }
+
+@media screen and (min-width: 1430px) {
+  .header {
+
+    &::after {
+      // height: 350px;
+      transform: matrix(1, -0.0874887, 0, 1, 0, -60);
+    }
+
+  }
+  }
+
 @media screen and (min-width: 1660px) {
 
   .header {
 
     &::after {
+      // height: 400px;
+
       transform: matrix(1, -0.0874887, 0, 1, 0, -80);
     }
   }

@@ -8,7 +8,7 @@
   &::after {
     content: '';
     width: 100%;
-    height: 250px;
+    height: 150%;
     position: absolute;
     // transform: translateY(-50px);
     @content;
