@@ -19,10 +19,10 @@ $(document).ready(addPlaceholder);
 function tryItNow() {
 
   if ( $('#middleSection').visible() ) {
-    $('#joingList').slideToggle( 'fast' , function() {
+    $('#joingList').delay(500).slideToggle( 400 , function() {
       console.log('message up');
 
-      $('#cdContactForm').delay(300).slideToggle( 'fast' );
+      $('#cdContactForm').delay(500).slideToggle( 400 );
       console.log('form up');
     });
 
