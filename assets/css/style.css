@@ -54,7 +54,7 @@ p {
 /*============  Mixins  ============*/
 /*==================================*/
 .header {
-  background-image: url("../1024x350.png");
+  background-image: url("../i2i-header.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -202,24 +202,36 @@ p {
 
   .mt-5 {
     margin-top: 12rem !important; } }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 360px) {
   .header {
     height: 200px; } }
+@media screen and (min-width: 410px) {
+  .header {
+    height: 225px; } }
 @media screen and (min-width: 460px) {
   .header {
     height: 250px; } }
+@media screen and (min-width: 510px) {
+  .header {
+    height: 275px; } }
 @media screen and (min-width: 570px) {
   .header {
     height: 300px; } }
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 615px) {
+  .header {
+    height: 325px; } }
+@media screen and (min-width: 669px) {
   .header {
     height: 350px; } }
+@media screen and (min-width: 710px) {
+  .header {
+    height: 375px; } }
 @media screen and (min-width: 1025px) {
   .header {
-    height: 33vw !important; }
+    height: 35vw !important; }
 
   .pt-0 {
-    margin-top: -50px; } }
+    margin-top: -30px; } }
 #ctct_form_0 {
   display: flex;
   min-height: inherit;
