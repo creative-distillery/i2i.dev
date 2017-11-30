@@ -33,49 +33,12 @@
 }
 
 .header {
-  display: flex;
-  // position: fixed;
-  justify-content: space-between;
-  align-items: flex-start;
+  background-image: url("../1024x350.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
   width: 100%;
-  height: auto;
-
-  @include skewed;
-
-  &:after {
-    background-color: #fff;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    flex: 0 auto;
-    z-index: 99;
-    // padding: $padding-header;
-    // padding-top: 1.25rem;
-    // padding-right: 0;
-    // padding-left: 0;
-  }
-}
-
-.header-left {
-  flex: 1 2 25%;
-}
-.header-center {
-  flex: 2 1 50%;
-  display: flex;
-  justify-content: center;
-  // height: auto;
-  // padding-top: 1.25rem;
-
-  @include aspect-ratio(89, 30);
-}
-.header-right {
-  display: flex;
-  flex: 1 2 25%;
-  justify-content: flex-end;
-
+  height: 350px;
 }
 
 .section {
@@ -100,6 +63,7 @@
 
 
 .top {
+  padding-top: 0;
   background-color: $color-primary;
   background-image: url("../words.png");
   background-repeat: repeat;
