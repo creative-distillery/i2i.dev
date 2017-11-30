@@ -40,7 +40,9 @@
   width: 100%;
   height: auto;
 
-  @include skewed {
+  @include skewed;
+
+  &:after {
     background-color: #fff;
   }
 
