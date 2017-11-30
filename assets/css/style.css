@@ -54,7 +54,7 @@ p {
 /*============  Mixins  ============*/
 /*==================================*/
 .header {
-  background-image: url("../1024x350.png");
+  background-image: url("../i2i-header.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -92,21 +92,28 @@ p {
   background-size: cover; }
 
 .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-left: 3.125rem;
   padding-right: 3.125rem;
   padding-top: 2.75rem; }
 
 .col {
-  flex: 0 0 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   max-width: 100%;
   padding-left: 1.28rem;
   padding-right: 1.28rem; }
 
 @media screen and (min-width: 768px) {
   .col {
-    flex: 0 0 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
     max-width: 50%; } }
 .footer {
   padding-bottom: 1.25rem; }
@@ -117,13 +124,18 @@ p {
     margin-left: auto; }
 
 .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100px;
   z-index: 99;
   padding: 1.25rem 3.125rem;
   padding-left: 0;
-  box-sizing: content-box; }
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
 
 .btn, .btn-outline, .btn-submit, .email {
   font-family: "proxima-nova",sans-serif;
@@ -136,6 +148,7 @@ p {
   color: #fff;
   margin-top: .5rem;
   margin-bottom: .5rem;
+  -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out; }
 
 .btn-outline {
@@ -202,29 +215,47 @@ p {
 
   .mt-5 {
     margin-top: 12rem !important; } }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 360px) {
   .header {
     height: 200px; } }
+@media screen and (min-width: 410px) {
+  .header {
+    height: 225px; } }
 @media screen and (min-width: 460px) {
   .header {
     height: 250px; } }
+@media screen and (min-width: 510px) {
+  .header {
+    height: 275px; } }
 @media screen and (min-width: 570px) {
   .header {
     height: 300px; } }
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 615px) {
+  .header {
+    height: 325px; } }
+@media screen and (min-width: 669px) {
   .header {
     height: 350px; } }
+@media screen and (min-width: 710px) {
+  .header {
+    height: 375px; } }
 @media screen and (min-width: 1025px) {
   .header {
-    height: 33vw !important; }
+    height: 35vw !important; }
 
   .pt-0 {
-    margin-top: -50px; } }
+    margin-top: -30px; } }
 #ctct_form_0 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: inherit;
-  justify-content: center;
-  align-items: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .ctct-form-embed.form_0 .ctct-form-defaults {
   background-color: transparent !important; }
@@ -247,13 +278,11 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem; }
-  #email_address_0::-moz-placeholder {
-    color: #fff; }
   #email_address_0::-webkit-input-placeholder {
     color: #fff; }
   #email_address_0:-ms-input-placeholder {
     color: #fff; }
-  #email_address_0:-moz-placeholder {
+  #email_address_0::-ms-input-placeholder {
     color: #fff; }
   #email_address_0::placeholder {
     color: #fff; }
@@ -308,5 +337,3 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem; }
-
-/*# sourceMappingURL=style.css.map */

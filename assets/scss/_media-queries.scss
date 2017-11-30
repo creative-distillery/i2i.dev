@@ -30,9 +30,15 @@
 
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 360px) {
   .header {
     height: 200px;
+  }
+}
+
+@media screen and (min-width: 410px) {
+  .header {
+    height: 225px;
   }
 }
 
@@ -41,21 +47,36 @@
     height: 250px;
   }
 }
+@media screen and (min-width: 510px) {
+  .header {
+    height: 275px;
+  }
+}
 @media screen and (min-width: 570px) {
   .header {
     height: 300px;
   }
 }
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 615px) {
+  .header {
+    height: 325px;
+  }
+}
+@media screen and (min-width: 669px) {
   .header {
     height: 350px;
   }
 }
+@media screen and (min-width: 710px) {
+  .header {
+    height: 375px;
+  }
+}
 @media screen and (min-width: 1025px) {
   .header {
-    height: 33vw !important;
+    height: 35vw !important;
   }
   .pt-0 {
-    margin-top: -50px;
+    margin-top: -30px;
   }
 }
