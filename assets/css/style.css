@@ -290,8 +290,8 @@ p {
     margin-top: 12rem !important; } }
 @media screen and (min-width: 768px) {
   .header::after {
-    -webkit-transform: matrix(1, -0.0874887, 0, 1, 0, -50);
-            transform: matrix(1, -0.0874887, 0, 1, 0, -50); }
+            -webkit-transform: matrix(1, -0.0874887, 0, 1, 0, -50);
+                    transform: matrix(1, -0.0874887, 0, 1, 0, -50); }
 
   .footer .social-links {
     display: none; } }
