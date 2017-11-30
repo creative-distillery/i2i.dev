@@ -92,28 +92,21 @@ p {
   background-size: cover; }
 
 .bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-left: 3.125rem;
   padding-right: 3.125rem;
   padding-top: 2.75rem; }
 
 .col {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
+  flex: 0 0 100%;
   max-width: 100%;
   padding-left: 1.28rem;
   padding-right: 1.28rem; }
 
 @media screen and (min-width: 768px) {
   .col {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    flex: 0 0 50%;
     max-width: 50%; } }
 .footer {
   padding-bottom: 1.25rem; }
@@ -124,18 +117,13 @@ p {
     margin-left: auto; }
 
 .social-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 100px;
   z-index: 99;
   padding: 1.25rem 3.125rem;
   padding-left: 0;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box; }
+  box-sizing: content-box; }
 
 .btn, .btn-outline, .btn-submit, .email {
   font-family: "proxima-nova",sans-serif;
@@ -148,7 +136,6 @@ p {
   color: #fff;
   margin-top: .5rem;
   margin-bottom: .5rem;
-  -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out; }
 
 .btn-outline {
@@ -234,16 +221,10 @@ p {
   .pt-0 {
     margin-top: -50px; } }
 #ctct_form_0 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   min-height: inherit;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  justify-content: center;
+  align-items: center; }
 
 .ctct-form-embed.form_0 .ctct-form-defaults {
   background-color: transparent !important; }
@@ -266,11 +247,13 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem; }
+  #email_address_0::-moz-placeholder {
+    color: #fff; }
   #email_address_0::-webkit-input-placeholder {
     color: #fff; }
   #email_address_0:-ms-input-placeholder {
     color: #fff; }
-  #email_address_0::-ms-input-placeholder {
+  #email_address_0:-moz-placeholder {
     color: #fff; }
   #email_address_0::placeholder {
     color: #fff; }
@@ -325,3 +308,5 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem; }
+
+/*# sourceMappingURL=style.css.map */
