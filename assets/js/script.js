@@ -16,31 +16,25 @@ $(document).ready(addPlaceholder);
 
 
 
-function tryItNow() {
-
-  if ( $('#middleSection').visible() ) {
-    $('#joingList').delay(300).slideToggle( 400 , function() {
-      console.log('message up');
-
-      $('#cdContactForm').delay(500).slideToggle( 400 );
-      console.log('form up');
-    });
-
-  } else {
-    setTimeout(tryItNow, 200);
-  }
-
-}
-
-$(document).ready(function(){
-
-    $('#joingList').slideToggle(10, function(){
-      console.log('message hidden');
-    });
-    $('#cdContactForm').slideToggle(10, function(){
-      console.log('form hidden');
-    });
-
-  tryItNow();
-
-});
+// function tryItNow() {
+//
+//   if ( $('#middleSection').visible() ) {
+//     $('#joingList').delay(300).removeClass('hide-down');
+//
+//     $('#cdContactForm').delay(800).removeClass('hide-down');
+//
+//   } else {
+//     setTimeout(tryItNow, 100);
+//   }
+//
+// }
+//
+// $(document).ready(function(){
+//
+//   $('#joingList').addClass('hide-down');
+//
+//   $('#cdContactForm').addClass('hide-down');
+//
+//   tryItNow();
+//
+// });
