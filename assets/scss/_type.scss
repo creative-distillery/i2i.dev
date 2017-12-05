@@ -84,6 +84,17 @@ p {
   }
 }
 
+a {
+  .footer & {
+    @include fontstack-light {
+      display: block;
+      font-size: 1.125rem;
+      line-height: 1.7778rem;
+      color: $color-grey;
+    }
+  }
+}
+
 .bottom {
   h3 {
     color: $color-tertiary;
